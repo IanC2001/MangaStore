@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Cabecera{
+  background-color: rgba(127, 135, 86, 0.738);
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 40px;
+  color: black;
+}
+
+
+
+#DropdownButton{
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+#DropdownButton:hover{
+  border: none;
+}
+
+.Dropdown.Item:hover{
+  background-color: 
+  rgba(52, 2, 90, 0.934);
+}
+
+.logoImg{
+  width: 100px;
+}
+
+#h1{
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.navFlex{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgba(230, 234, 185, 0.738);
+  border-top:1px solid rgb(211, 212, 197);
+}
+
+.btn2{
+  background-color: transparent;
+  border: none;
+}
+
+.body{
+  background-color:rgba(230, 234, 185, 0.738); 
+  height: 100vh;
+}
+
+.nav{
+  border-bottom: 1px solid rgb(211, 212, 197);
+}
+
+.carousel{
+  width:95%;
+  margin-left:50px;
+  margin-top:50px ;
+}
+
+
+.Novedades{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.displayCard{
+  display: flex;
+  justify-content: space-between;
+}
+
+.svgIg1{
+  margin-top: 50px;
+  display: flex;
+  border-bottom: 1px solid rgb(211, 212, 197);
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.svgIg{
+  width: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flexIg{
+  display: flex;
+  justify-content: center;
+}
+
+.flexIg2{
+  width: 400px;
+  padding: 20px;
+}
+
+.article{
+text-align: center;
 }

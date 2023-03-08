@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import Cabecera from './components/Cabecera';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import Cart from './components/Cart';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <BrowserRouter>
+
+      <Cabecera />
+
+      <Navbar />
+
+      
+
+      <Routes>
+          <Route exact path="/" element={<ItemListContainer />}/>
+            <Route exact path="/Cart" element={<Cart/>}/>
+            <Route exact path='/categoria/:id' element ={<ItemListContainer/>}/>
+            <Route exact path='/item/:id' element ={<ItemDetailContainer/>}/>
+      </Routes>
+
+      
+
+       
+        
+        {/* <Main /> */}
+      </BrowserRouter>
+  )
 }
 
 export default App;
